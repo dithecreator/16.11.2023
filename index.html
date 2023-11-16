@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Candy Store</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+    header img {
+      max-height: 60px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo"><img src="candy.webp" alt="Candy Store Logo"></a>
+        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Products</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col s3">
+        <p>Categories</p>
+        <ul>
+          <li><a href="#">Chocolates</a></li>
+          <li><a href="#">Gummies</a></li>
+          <li><a href="#">Hard Candies</a></li>
+        </ul>
+      </div>
+
+      <div class="col s6">
+        <main>
+          <h3>Welcome to Candy Store</h3>
+          <p>Explore a world of sweet delights at our Candy Store. From delectable chocolates to chewy gummies,
+            we have a wide variety of candies to satisfy your sweet tooth.</p>
+        </main>
+      </div>
+
+      <div class="col s3">
+        <p>Special Offers</p>
+        <ul>
+          <li><a href="#">Buy 1 Get 1 Free on Chocolates</a></li>
+          <li><a href="#">20% off on Gummy Bears</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col s12">
+          <h5 class="white-text">Contact Us</h5>
+          <p class="grey-text text-lighten-4">123 Candy Lane, Sweet City | Phone: (555) 123-4567</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      $('.sidenav').sidenav();
+    });
+  </script>
+
+</body>
+
+</html>
